@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+        .aboutUs {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .column {
+            float: left;
+            width: 32%;
+            margin-bottom: 16px;
+            padding:8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+            border-radius: 25px;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+
+        .title {
+            color: grey;
+        }
+
+        .buttonAbout {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .buttonAbout:hover {
+            background-color: rgb(238, 228, 230);
+        }
+        .dropdownC {
+            position: relative;
+            display: inline-block;
+            min-width: 250px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdownC:hover .dropdown-content {
+            display: block;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+            overflow: auto;
+
+        }
+    </style>
+	
+</head>
+
+<body class="aboutUs">
+
+	<header>
+		<img src="images/logo.jpg" width="150" height="150" alt="logo1" class="logo"><br/>
+		<h1>Tution Web</h1><br/><br/>
+	</header>
+	<hr/>
+	
+	<center>
+	<ul class="menu">
+		<li class="menu"><a href="home.html">Home</a></li>
+		<li class="menu"><a href="login.html">Notices</a></li>
+		
+		<li class="dropdown">
+		<a class="timetbl">Course Content</a>
+		<div class="types">
+			<a href="login.html">Zoom Links</a>
+			<a href="login.html">Reading materials</a>
+		</div>
+		</li>
+		
+		<li class="menu"><a href="#">About Us</a></li>
+		
+	</ul>
+	</center>
+	<hr/>
+	<div id="back"><br/>
+	<center>
+	<fieldset>
+		<div class="about-section">
+            <h1>About Us Page</h1>
+            <p>Over the years our institute has produced some of the top scoring students in the Island in the Science.</p>
+    <br>
+            <p>
+                Tution Web Established in 2000, as a secondary educational institute catering to the young individuals waiting to 
+                 contribute to the growth of the country
+                </p>
+                <p>
+                By being true to our mission statement <q>To guide our students towards the fortunes of knowledge
+                producing winners amongst winners as well as disciplined all-round individuals with respectable social
+                values </q> 
+            </p>
+        </div>
+        <br> <br>
+        <h2 style="text-align:center">OUR LECTURERS</h2>
+    
+        <div style="text-align: center;">
+    
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>R.D Wickramasinghe</h2>
+                    <p class="title">PHYSICS SINHALA MEDIUM</p>
+                    <p>BSc. (Engieering) Hons. University of Moratuwa </p> <br><br>
+                    <div class="dropdownC">
+                        <button class="buttonAbout">Contact</button>
+                        <div class="dropdown-content">
+                        <div class="desc">Email: rdwickramasighe@gmail.com</div>
+                        <div class="desc">Mobile: 0774455888</div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>K.D. Dewa</h2>
+                    <p class="title">CHEMISTRY SINHALA MEDIUM</p>
+                    <p>B.Sc (Chem) University Of Colombo</p> <br><br>
+                    <div class="dropdownC">
+                        <button class="buttonAbout">Contact</button>
+                        <div class="dropdown-content">
+                        <div class="desc">Email: kddewa@gmail.com</div>
+                        <div class="desc">Mobile: 0719933858</div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>S.M. Shalani</h2>
+                    <p class="title">BIOLOGY / BST SINHALA MEDIUM</p>
+                    <p> BSc. ( Plant Biotechnology) USJP, MSc (PGIA) Uni of Peradeniya Dip ( com) Advanced Dip ( Static &
+                        Bio Maths)</p>
+                    <div class="dropdownC">
+                        <button class="buttonAbout">Contact</button>
+                        <div class="dropdown-content">
+                        <div class="desc">Email: smshalini@gmail.com</div>
+                        <div class="desc">Mobile: 0705546873</div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+		
+	</fieldset>
+	</br>
+	</center>
+	</div>
+	<footer>
+	<br/>
+	
+
+	<br/>
+	</footer>
+	
+</body>
+</html>
+
+

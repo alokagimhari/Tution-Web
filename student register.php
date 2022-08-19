@@ -1,0 +1,93 @@
+<?php
+	session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<script src="js/myScript.js"></script>
+	
+</head>
+
+<body>
+
+	<header>
+		<img src="images/logo.jpg" width="150" height="150" alt="logo1" class="logo"><br/>
+		<h1>Tution Web</h1><br/><br/>
+	</header>
+	<hr/>
+	
+	<center>
+	<ul class="menu">
+    <li class="menu"><a href="home.html">Home</a></li>
+		<li class="menu"><a href="login.html">Notices</a></li>
+		
+		<li class="dropdown">
+		<a class="timetbl">Course Content</a>
+		<div class="types">
+			<a href="login.html">Zoom Links</a>
+			<a href="login.html">Reading materials</a>
+		</div>
+		</li>
+		
+		<li class="menu"><a href="about.html">About Us</a></li>
+	</ul>
+	</center>
+	<hr/>
+	<div id="back"><br/>
+	<center>
+	<form method="post" onsubmit="return checkPassword()" autocomplete="off" action="registerstd.php">
+		<fieldset>
+		<br/>
+		<h3>Student Registration Form </h3></br>
+		
+		<p style="color:red;"><?php echo $_SESSION['error']."<br/>";?></p>
+		<label for="fname">First Name : </label>
+		<input type="text" id="fname" name="stufname" required><br/><br/>
+		
+		<label for="lname">Last Name : </label>
+		<input type="text" id="lname" name="stulname" required><br/><br/>
+		
+		<label>Gender : </label>
+		<input type="radio" name="gender" id="male" value="Male" required><label for="male">Male </label>
+		<input type="radio" name="gender" id="female" value="Female" required><label for="female"> Female </label><br/><br/>
+		
+		<label for="mail">Email address : </label>
+		<input type="email" id="mail" name="mailadd" placeholder="myname@example.com" pattern="[0-9a-zA-Z%_+-]+@[a-zA-Z]+\.[a-z]{2,3}" required><br/><br/>
+		
+		<label for="phNo">Contact No : </label>
+		<input type="phone" id="phNo" name="contact" pattern="[0-9]{10}" required><br/><br/>
+		
+		<p>Username should contain 6-15 characters and can include alphanumeric characters and underscore only</p>
+		<label for="uname" required>Username : </label>
+		<input type="text" id="uname" name="username" pattern="[A-Za-z0-9_]{6,15}" required><br/><br/>
+		
+		
+		<p>Password should contain 8-10 characters and can include lowercase letters, uppercase letters and digits</p>
+		<label for="pwd">Password : </label>
+		<input type="password" id="pwd" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}" required><br/><br/>
+		
+		<label for="repwd">Confirm Password : </label>
+		<input type="password" id="repwd" required>
+		<p id="pwdMismatch" style="color:red;display:none;">Password Mismatch!</p><br/>
+		
+		<input type="checkbox" id="agree" onclick="enableButton()">I accept the <a href="terms.html">Terms of Use</a> and <a href="privacy policy.html">Privacy policy</a><br/><br/>
+		<input type="submit" id="sbmt" value="Register as student" disabled><br/><br/>
+	Already a member? 
+	<a href="login.html">Sign in </a>
+	</fieldset>
+	</form></br>
+	</center>
+	</div>
+	<footer>
+	<br/>
+
+	<br/>
+	</footer>
+	
+</body>
+
+
+
